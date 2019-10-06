@@ -1,0 +1,51 @@
+In this problem, we started out with a 3-person team with 45 man-days. The actual velocity of this group was 32 story points. The focus factor calculations are:
+Focus Factor = Actual Velocity/Available Man-Days
+Focus Factor = 32/45 ≈ 0.711 ≈  71%
+Two people were added to the team. One person can work 100% of the time, so they add 15 man-days to the total. The second person can work 80% of the time, so they add 12 man-days to the total. There are 72 available man-days now. The estimated velocity calculations are:
+	Estimated Velocity = Available Man Days * Focus Factor
+	Estimated Velocity = 72 * 71% ≈ 51.12 story points
+According to Clem’s lecture and multiple online sources, an employee on average spends 5 hours at actual work and 3 hours slacking off in a typical 8-hour work day. Thus the estimated focus factor of a newly established team is 62.5%. The calculation for this number is (5/8)*100.
+Another way to rank story points would be to let the person with the most experience in the room be the ones who rank the story. We were thinking this would be a good idea as they are the most knowledgeable and would have a rough estimate for how long this would take. However, after thinking about this more we decided this was not a good option; as each person is different and even though the knowledgeable person would rank a story a 3, maybe a new person would rank it a 5 which would cause conflict and quotas not met. Another reason this may not be the best option is the Fibonnaci ranking system is a well known ranking system in the industry and it’s probably there for a reason.
+UML Binary Tree diagram
+public abstract class Node {
+	 int value;
+	 Node left;
+	 Node right;
+}
+public class RootNode extends Node {
+	int value;
+	Node parent;
+}
+public class BinaryTree {
+	RootNode root;
+	// construct a binary tree using node class
+}
+UML Linked List diagram
+public class Employee {
+	private String name;
+	private int ssn;
+	private int salary;
+	Employee nextEmployee;
+	
+	public int getSalary() {
+		return salary;
+	}
+	public int getSSN() {
+		return ssn;
+	}
+	public String getName() {
+		return name;
+	}
+	public Employee getNextEmployee() {
+		return nextEmployee;
+	}
+	public void setSalary(int salary) {
+		...
+	}
+	public void setSSN(int ssn) {
+		...
+	}
+	public void setName(String name) {
+			...
+	}
+}
